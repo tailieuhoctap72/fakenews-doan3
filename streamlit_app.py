@@ -17,7 +17,7 @@ def main():
     col1.subheader("Nhập tin tức cần kiểm tra")
     p = col1.text_area("Input:", placeholder="Một cán bộ bảo vệ rừng ở Thừa Thiên-Huế gặp nạn khi truy đuổi “lâm tặc”, phải trườn bằng tay với sự hỗ trợ của đồng nghiệp suốt 6 giờ mới ra khỏi rừng sâu...")
     
-    col2.image("fake-news.png")
+    col2.image("resources/fake-news.png")
     col2.subheader("Chọn model đi nào")
     modelOptions = ("LSTM", "SVM", "Decision Tree")
     model = col2.selectbox("Select:", modelOptions)

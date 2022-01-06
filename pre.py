@@ -87,7 +87,7 @@ def readStopwords(fileName):
     stopwords = stopwords.splitlines()
     return stopwords
 
-stopwords = readStopwords('vietnamese_stopwords.txt')
+stopwords = readStopwords('resources/vietnamese_stopwords.txt')
 annotator = VnCoreNLP("VnCoreNLP-1.1.1.jar", annotators="wseg", max_heap_size='-Xmx2g')
 
 

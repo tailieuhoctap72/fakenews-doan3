@@ -8,7 +8,7 @@ from tensorflow import keras
 def predict(text_df):
     X = text_df['text']
     tokenizer_js = ""
-    f = open("tokenizer.json", "r")
+    f = open("resources/tokenizer.json", "r")
     tokenizer_js = f.read()
     
     tokenizer = tokenizer_from_json(tokenizer_js)
@@ -17,6 +17,6 @@ def predict(text_df):
     maxlen = 500
     X = pad_sequences(X, maxlen=maxlen)
     
-    model = keras.models.load_model('LSTM_model.h5')
+    model = keras.models.load_model('models/LSTM_model.h5')
     return model.predict(X)
     

@@ -4,11 +4,11 @@ import numpy as np
 
 def predict(text_df):
     text = text_df.text
-    f = open("dictionary.json", "r")
+    f = open("resources/dictionary.json", "r")
     dict_feature = json.loads(f.read())
     
     feature = extract_features(text, dict_feature)
-    model = joblib.load("SVM_classifier.pkl")
+    model = joblib.load("models/SVM_classifier.pkl")
 
     return model.predict(feature)
 
