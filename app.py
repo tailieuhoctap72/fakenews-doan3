@@ -11,8 +11,8 @@ def main():
     col1, col2 = st.columns([6, 4])
 
     col1.title('Phân loại tin tức giả\n')
-    col1.text("Tiện ích cho phép phân loại các tin tức giả sử dụng các model học máy.")
-    col1.text("Các mô hình được sử dụng: LSTM, SVM, Decision Tree")
+    col1.text("Demo đồ án NMKHDL phân loại các tin tức giả sử dụng các model học máy.")
+    col1.text("MSSV các thành viên: 19120318, 18120027, 18120520, 19120387, 19120470")
     col1.text("")
     col1.subheader("Nhập tin tức cần kiểm tra")
     p = col1.text_area("Input:")
